@@ -6,7 +6,7 @@ URL: aidanlee07.github.io
        <title>Hello</title>
     </head>
     <body>
-      <p>hello everyone</p>
+      <p>Hello everyone,I am a new programmer and I am so exited for this!</p>
     </body>
 
 </html>
