@@ -1,3 +1,2 @@
-# aidanlee07.github.io
-Aidan’s personal website
-ad
+# Aidan’s personal website
+URL: aidanlee07.github.io
