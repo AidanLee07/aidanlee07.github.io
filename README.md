@@ -8,7 +8,7 @@ URL: aidanlee07.github.io
       <li>I am planning to go to places i have never been</li>
       </ul>
       <ol start="7">
-     <li>hihihi</li>
+     <li>hi</li>
       </ol>
     </body>
 
