@@ -7,7 +7,9 @@ URL: aidanlee07.github.io
     </head>
     <body>
       <p>Hello everyone,I am a new programmer and I am so exited for this!</p>
-      <ul></ul>
+      <ul>
+      <li>I am planning to go to places i have never been</li>
+      </ul>
     </body>
 
 </html>
