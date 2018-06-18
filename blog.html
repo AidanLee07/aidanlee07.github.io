@@ -2,104 +2,125 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-    <h1>My blog</h1>
+        <h1>My blog</h1>
     </header>
-    <hav>
-  <section>
-    <a href="index.html">Homepage</a>
-    </hav>
-    <h2>Lesson 4:Hyperlink</h2>
-    <p>May 25th</p>
-    <h3>Hyperlink</h3>
-    <p>Hyperlink:Hyperlink is something you can click and take you to another page.</p>
-    <p>&lt;a&gt;:Marks the beginning and the end of a hypertext link.</p>
-    <p>&lt;a.href&gt;:An attribute.Specifies the destination.
-        <br>There are two metheod.</p>
-    <p>First way is to link to a website.</p>
-    <p>Second is by liinking to a file.</p>
-    <h2>Lesson 3: Images</h2>
-    <p>May 18th 2018</p>
-    <h3>Images</h3>
-    <p>Images are used to make pictures for the website.</p>
-    <ul>
-        <li> &lt;img&gt;:shows pictures that you want for your website</li>
-        <li> &lt;img src&gt;: src means source.Betwwen the image,
-            <br>Put the source and the source of the picture and it will work</li>
-        <li>&lt;img height width&gt;:shows the picture and change it to what you want </li>
-    </ul>
-    <h2>Lesson 2:Attribute</h2>
-    <p>May 11th 2018</p>
-    <p>&lt;br&gt;:Breaks row.Special thing is that you only need one and if you need more space,
-        <br>just add more
-        <br>It can be placed anywhere in the body.</p>
-    <p>&lt;!-- --&gt;:Leaves out place you want to leave out.You use comment instead of deleting it because
-        <br>you can later erease the comment and it will show again.
-        <br>Area that are green means they are commented.</p>
-    <h3>Attributes</h3>
-    <p>Attribute: Provides information about the elements.</p>
-    <p>&lt;ol start=""&gt;: works only in organized list.
-        <br>If you put format like that and put number between ",it will start at number you wrote. Organized list start at one
-        without start.</p>
-    <p>&lt;ol reversed&gt;: Also only work in organized list.
-        <br>In organized list,the numbers go up but if you put reversed,the number wil go down.</p>
-    <h2>Lesson 1: Introduction to html</h2>
-    <p>May 4th 2018</p>
-    <p>&lt;!DOCTYPE&gt;:A code to start with the whole program.</p>
-    <p>&lt;HTML&gt;:website language</p>
-    <p>&lt;head&gt;:Main part of the website such as name of the website and you cant see it.</p>
-    <p>&lt;h1&gt;-&lt;h6&gt; determines the size and makes the title.</p>
-    <p>&lt;title&gt;:adds title</p>
-    <p>&lt;ul&gt;:unorganized list: Make a bullet point beside each list.Must use &lt;li&gt;between.</p>
-    <p>&lt;ol&gt;:Organized list.Shows the number and can be used as a step.&lt;br&gt;Must use &lt;li&gt; between. </p>
-    <p>&lt;li&gt;list of things.You need &lt;ul&gt; or &lt;ol&gt; to make a list inside&lt;/li&gt;</p>
-    <p>&lt;body&gt;:important part of the website.Makes paragraph and list.</p>
-    <p>*In order to stop the code write&lt;/name of the code&gt;</p>
-    <br>
-    <br>
-    <h1>Summary</h1>
-    <h2>Crash Course #1</h2>
-    <p>Computer is lifeload of today's life. They took care of functions that takes long time or is hard to do.
-        <br>If it shuts down, the whole world is going to be in chaos. Now,we live in an age called Electronic Age.
-        <br>So to the history of the computer, it started in 2500BCE which Mesopotamia made Abacus. It's like a hand calculator
-        and saves data.
-        <br>It can be hard to use since it can go up to thousands. After 4000 years, device called astrolobe which enable ships
-        to find the latitude of the ship. Later, clocks are made for many purposes
-        <br> The first computer isn't a device at all. It was a job! Their job is to calculate and store data without any machine.
-        <br>At late 1800, computer is now started to be called machines. The first device was called Step Reckoner which can
-        do all four operation together. It was really successful that it was used for three centuries. Later in World War
-        2,made a ranged table.
-        <br>You used the cannon nad write all the record in a paper and use it.
-        <br> The problem was that if they changed the cannon or the bullet, they need to change everything. Later Babbage tried
-        to make world's most advance computer, Differnce Engine that ca n do polynomial.
-        <br> Unfortunately, his project was abandoned until in 1991 a group of scientist made it and it was successful.
-        <br>Babbage also thought of Analytical Engine which is basically a computer. He is now called father of computers.
-        <br>Later Aba became the first programmer and Herman Hollerith made a punch card machine.
-        <br> It was so successful that they later made a company called IBM.
-    </p>
-    <h1>Commands</h1>
-    <br>
-    <br>
-    <br>
-    <ul>
-        <li>Command+s:save </li>
-        <li>Command+z:go back</li>
-        <li>Command+x:cut</li>
-        <li>Command+v:paste</li>
-        <li>Command+c:copy</li>
-        <li>Commend+w:close window</li>
-        <li>Commend+f:find</li>
-        <li>Command+a:highlight all</li>
-        <li>Command+a, Command+k, Command+f: format code</li>
-    </ul>
-  </section>
-  <footer>
-     <p>&copy;2018</p> 
-  </footer>
+    <nav>
+        <a href="index.html">Homepage</a>
+    </nav>
+    <section>
+        <h2>Lesson 6:Introduction to CSS</h2>
+        <p>June 19th</p>
+        <p>&lt;link&gt;:Links the .html file to .css file.</p>
+        <p>CSS:Language for stylizing HTML files</p>
+        <p>Selector:Points to the HTML element you want to style.</p>
+        <p>Property:Stylish feature you want to change.</p>
+        <p>Value:How you want to change its stylistic feature.</p>
+        <p>font-size: It makes how big the letters are.</p>
+        <p>line-height:It makes the distance between two lines.</p>
+        <p>color:Used to set the text colour of an element(It must be US spelling)</p>
+        <h2>Lesson 5:Semantic elements</h2>
+        <p>June 12th</p>
+        <h3>Semantic Elements</h3>
+        <p>Sementic Elements are header,nav(navigation),
+            <br>section,aside, and footer.</p>
+        <p>&lt;header&gt;:A container for introductory content.
+            <br>Header contains one or more heading and Logo or icon.</p>
+        <p>&lt;nav&gt;:A container for a set of navigation links.</p>
+        <p>&lt;section&gt;:Defines sections in a document.</p>
+        <p>&lt;footer&gt;:Container for the bottom of the webpage.</p>
+        <h2>Lesson 4:Hyperlink</h2>
+        <p></p>
+        <p>May 25th</p>
+        <h3>Hyperlink</h3>
+        <p>Hyperlink:Hyperlink is something you can click and take you to another page.</p>
+        <p>&lt;a&gt;:Marks the beginning and the end of a hypertext link.</p>
+        <p>&lt;a.href&gt;:An attribute.Specifies the destination.
+            <br>There are two metheod.</p>
+        <p>First way is to link to a website.</p>
+        <p>Second is by liinking to a file.</p>
+        <h2>Lesson 3: Images</h2>
+        <p>May 18th 2018</p>
+        <h3>Images</h3>
+        <p>Images are used to make pictures for the website.</p>
+        <ul>
+            <li> &lt;img&gt;:shows pictures that you want for your website</li>
+            <li> &lt;img src&gt;: src means source.Betwwen the image,
+                <br>Put the source and the source of the picture and it will work</li>
+            <li>&lt;img height width&gt;:shows the picture and change it to what you want </li>
+        </ul>
+        <h2>Lesson 2:Attribute</h2>
+        <p>May 11th 2018</p>
+        <p>&lt;br&gt;:Breaks row.Special thing is that you only need one and if you need more space,
+            <br>just add more
+            <br>It can be placed anywhere in the body.</p>
+        <p>&lt;!-- --&gt;:Leaves out place you want to leave out.You use comment instead of deleting it because
+            <br>you can later erease the comment and it will show again.
+            <br>Area that are green means they are commented.</p>
+        <h3>Attributes</h3>
+        <p>Attribute: Provides information about the elements.</p>
+        <p>&lt;ol start=""&gt;: works only in organized list.
+            <br>If you put format like that and put number between ",it will start at number you wrote. Organized list start at one
+            without start.</p>
+        <p>&lt;ol reversed&gt;: Also only work in organized list.
+            <br>In organized list,the numbers go up but if you put reversed,the number wil go down.</p>
+        <h2>Lesson 1: Introduction to html</h2>
+        <p>May 4th 2018</p>
+        <p>&lt;!DOCTYPE&gt;:A code to start with the whole program.</p>
+        <p>&lt;HTML&gt;:website language</p>
+        <p>&lt;head&gt;:Main part of the website such as name of the website and you cant see it.</p>
+        <p>&lt;h1&gt;-&lt;h6&gt; determines the size and makes the title.</p>
+        <p>&lt;title&gt;:adds title</p>
+        <p>&lt;ul&gt;:unorganized list: Make a bullet point beside each list.Must use &lt;li&gt;between.</p>
+        <p>&lt;ol&gt;:Organized list.Shows the number and can be used as a step.&lt;br&gt;Must use &lt;li&gt; between. </p>
+        <p>&lt;li&gt;list of things.You need &lt;ul&gt; or &lt;ol&gt; to make a list inside&lt;/li&gt;</p>
+        <p>&lt;body&gt;:important part of the website.Makes paragraph and list.</p>
+        <p>*In order to stop the code write&lt;/name of the code&gt;</p>
+        <br>
+        <br>
+        <h1>Summary</h1>
+        <h2>Crash Course #1</h2>
+        <p>Computer is lifeload of today's life. They took care of functions that takes long time or is hard to do.
+            <br>If it shuts down, the whole world is going to be in chaos. Now,we live in an age called Electronic Age.
+            <br>So to the history of the computer, it started in 2500BCE which Mesopotamia made Abacus. It's like a hand calculator
+            and saves data.
+            <br>It can be hard to use since it can go up to thousands. After 4000 years, device called astrolobe which enable ships
+            to find the latitude of the ship. Later, clocks are made for many purposes
+            <br> The first computer isn't a device at all. It was a job! Their job is to calculate and store data without any machine.
+            <br>At late 1800, computer is now started to be called machines. The first device was called Step Reckoner which can
+            do all four operation together. It was really successful that it was used for three centuries. Later in World War
+            2,made a ranged table.
+            <br>You used the cannon nad write all the record in a paper and use it.
+            <br> The problem was that if they changed the cannon or the bullet, they need to change everything. Later Babbage tried
+            to make world's most advance computer, Differnce Engine that ca n do polynomial.
+            <br> Unfortunately, his project was abandoned until in 1991 a group of scientist made it and it was successful.
+            <br>Babbage also thought of Analytical Engine which is basically a computer. He is now called father of computers.
+            <br>Later Aba became the first programmer and Herman Hollerith made a punch card machine.
+            <br> It was so successful that they later made a company called IBM.
+        </p>
+        <h1>Commands</h1>
+        <br>
+        <br>
+        <br>
+        <ul>
+            <li>Command+s:save </li>
+            <li>Command+z:go back</li>
+            <li>Command+x:cut</li>
+            <li>Command+v:paste</li>
+            <li>Command+c:copy</li>
+            <li>Commend+w:close window</li>
+            <li>Commend+f:find</li>
+            <li>Command+a:highlight all</li>
+            <li>Command+a, Command+k, Command+f: format code</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy;2018</p>
+    </footer>
 </body>
 
 </html>

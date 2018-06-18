@@ -1,0 +1,26 @@
+h1{
+    color:rgb(0, 255, 0);
+    font-size: 50px;
+    line-height: 1;
+}
+h2{
+    color: rgb(198, 29, 29);
+    font-size: 20px;
+    line-height: 1;
+    
+}
+p{
+    color: rgb(6, 6, 238);
+    font-size: 20px;
+    line-height: 1;
+}
+li{
+    color: rgb(255, 235, 205);
+    font-size: 40px;
+    line-height: 1;
+}
+h3{
+    color: rgb(11, 168, 240);
+    font-size: 20px;
+    line-height: 1;
+}
