@@ -1,5 +1,5 @@
 h1{
-    font-size: 50px;
+    font-size: 20px;
     line-height: 1;
     font-family:cursive;
     font-weight:100;
@@ -20,14 +20,14 @@ li{
     font-size: 20px;
     line-height: 1;
 }
-h3{
+h2{
     font-size: 30px;
     line-height: 1;
 }
 
 #qp{
    color: rgb(255, 217, 0);
-   font-size: 40px;
+   font-size: 20px;
 }
 #bigP{
    font-family: serif;
@@ -39,7 +39,7 @@ h3{
 p{font-size: 20px;}
 
 #hi{
- font-size: 30px; 
+ font-size: 25px; 
  font-weight: bold;
 }
 
