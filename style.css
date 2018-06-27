@@ -1,26 +1,54 @@
 h1{
-    color:rgb(0, 255, 0);
     font-size: 50px;
     line-height: 1;
+    font-family:cursive;
+    font-weight:100;
+    text-align: center;
 }
-h2{
-    color: rgb(198, 29, 29);
-    font-size: 20px;
+#lol{
+    font-size: 30px;
     line-height: 1;
     
 }
-p{
-    color: rgb(6, 6, 238);
-    font-size: 20px;
+#hello{
+    color: rgb(6, 6, 23);
     line-height: 1;
+    font-size: 30px;
 }
 li{
-    color: rgb(255, 235, 205);
-    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     line-height: 1;
 }
 h3{
-    color: rgb(11, 168, 240);
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
 }
+
+#qp{
+   color: rgb(255, 217, 0);
+   font-size: 40px;
+}
+#bigP{
+   font-family: serif;
+   font-weight: bold;
+   color: black;
+ 
+}
+
+p{font-size: 20px;}
+
+#hi{
+ font-size: 30px; 
+ font-weight: bold;
+}
+
+h3{
+    font-size: 40px;
+}
+
+
+
+
+
+
