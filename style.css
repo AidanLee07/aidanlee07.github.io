@@ -4,16 +4,22 @@ h1{
     font-family:cursive;
     font-weight:100;
     text-align: center;
+    border-style:solid;
+    border-width: thick;
+    border-color: rgb(5, 132, 250);
+    margin-top: 100px
 }
 #lol{
     font-size: 30px;
     line-height: 1;
+    text-align: center;
     
 }
 #hello{
     color: rgb(6, 6, 23);
     line-height: 1;
     font-size: 30px;
+    text-align: center;
 }
 li{
     color: rgb(0, 0, 0);
@@ -21,31 +27,48 @@ li{
     line-height: 1;
 }
 h2{
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1;
 }
 
 #qp{
    color: rgb(255, 217, 0);
-   font-size: 20px;
+   font-size: 30px;
+   text-align: center;
 }
 #bigP{
    font-family: serif;
    font-weight: bold;
    color: black;
+   text-align: center;
  
 }
 
 p{font-size: 20px;}
 
 #hi{
- font-size: 25px; 
+ font-size: 30px; 
  font-weight: bold;
+ border-style: solid;
+ border-width: thick; 
+ border-color: rgb(5, 132, 250);
+ padding-top: 20px;
+ padding-bottom:20px;
+ padding-right: 50px;
+ text-align: center;
 }
 
 h3{
-    font-size: 40px;
+    font-size: 20px;
 }
+
+#blogBackground{
+    background-color: #99D3DF;
+}
+
+
+
+
 
 
 
