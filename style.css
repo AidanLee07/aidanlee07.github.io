@@ -13,6 +13,8 @@ h1{
     font-size: 30px;
     line-height: 1;
     text-align: center;
+    padding-top:"20";
+   padding-bottom:"20";
     
 }
 #hello{
@@ -20,6 +22,8 @@ h1{
     line-height: 1;
     font-size: 30px;
     text-align: center;
+    padding-top:"20";
+   padding-bottom:"20";
 }
 li{
     color: rgb(0, 0, 0);
@@ -35,6 +39,8 @@ h2{
    color: rgb(255, 217, 0);
    font-size: 30px;
    text-align: center;
+   padding-top:"20";
+   padding-bottom:"20";
 }
 #bigP{
    font-family: serif;
