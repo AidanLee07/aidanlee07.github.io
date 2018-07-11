@@ -72,6 +72,10 @@ h3{
 #blogBackground{
     background-color: #99D3DF;
 }
+canvas{
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+}
 
 
 
