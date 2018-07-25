@@ -19,11 +19,13 @@ function init(){
     ctx.fillRect(5*unit,7*unit,7*unit,unit);
     ctx.fillRect(5*unit,8*unit,7*unit,1*unit);
     ctx.fillRect(2*unit,12*unit,2*unit,1*unit);
-    ctx.fillRect(2*unit,13*unit,3*unit,1*unit);
+    ctx.fillRect(2*unit,13*unit,4*unit,1*unit);
     ctx.fillRect(2*unit,14*unit,2*unit,1*unit);
     ctx.fillRect(12*unit,12*unit,2*unit,1*unit);
-    ctx.fillRect(11*unit,13*unit,3*unit,1*unit);
-    ctx.fillRect(12*unit,14*unit,2*unit,1*unit);
+    ctx.fillRect(10*unit,13*unit,4*unit,1*unit);
+    ctx.fillRect(10*unit,14*unit,4*unit,1*unit);
+
+    
     ctx.fillStyle = "rgb(0,0,0)";
     ctx.fillRect(9*unit,4*unit,1*unit,2*unit); 
     ctx.fillRect(10*unit,6*unit,1*unit,1*unit);
@@ -51,6 +53,8 @@ function init(){
     ctx.fillRect(10*unit,16*unit,3*unit,1*unit);
     ctx.fillRect(2*unit,17*unit,4*unit,1*unit);
     ctx.fillRect(10*unit,17*unit,4*unit,1*unit);
+
+
 
   
 
