@@ -2,10 +2,12 @@ var canvas;
 var ctx;
 window.onload = init; // When the window loads, run the init function
 function block1(){
-
+   
 }
 
 function init(){
+    canvas = document.getElementById("myCanvas");
+    ctx = canvas.getContext("2d");
     canvas = document.getElementById("myCanvas");
     ctx = canvas.getContext("2d");
     ctx.fillStyle = 'blue'; // Setting the colour of filling
@@ -36,5 +38,10 @@ function init(){
 
     // ctx.fill();
    ctx.stroke(); // Stroking a line
+    ctx.save();
+    ctx.translate(300,300);
+    ctx.fillStyle = "black"
+    ctx.fillRect(0,0,120,120);
+    ctx.restore();
 
 }
