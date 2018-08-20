@@ -28,7 +28,7 @@ function animationLoop(timestamp) {
 // 7. Clears everthing in canvas
 ctx.clearRect(0, 0, canvas.width,canvas.height)
 // 8.Draw image in canvas
-ctx.fillRect(positionX,  0, 50, 50)
+secondMario();
 // 9. Move image
 positionX += 1;
 //10. Call this function again 
