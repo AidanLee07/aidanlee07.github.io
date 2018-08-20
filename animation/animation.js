@@ -26,11 +26,11 @@ function startAnimation(){
 // 6. Create startAnimaion
 function animationLoop(timestamp) {
 // 7. Clears everthing in canvas
-ctx.clearRect(0, 0, canvas.width,canvas.height)
+ctx.clearRect(1600, 0, canvas.width,canvas.height)
 // 8.Draw image in canvas
 secondMario();
 // 9. Move image
-positionX += 1;
+positionX += 51;
 //10. Call this function again 
 requestId = requestAnimationFrame(animationLoop);
 }
