@@ -122,4 +122,29 @@ function init(){
   ctx.fillRect(5*unit,35*unit,3*unit,1*unit);
   ctx.fillRect(5*unit,36*unit,3*unit,1*unit);
   ctx.fillRect(5*unit,37*unit,2*unit,1*unit);
+  ctx.fillRect(3*unit,38*unit,3*unit,1*unit);
+  ctx.fillStyle = "rgb(130,217,210)"
+  ctx.fillRect(8*unit,36*unit,5*unit,1*unit);
+  ctx.fillRect(8*unit,37*unit,5*unit,1*unit);
+  ctx.fillRect(7*unit,38*unit,6*unit,1*unit);
+  ctx.fillRect(6*unit,39*unit,7*unit,1*unit);
+  ctx.fillRect(5*unit,40*unit,8*unit,1*unit);
+  ctx.fillRect(4*unit,41*unit,9*unit,1*unit);
+  ctx.fillRect(3*unit,42*unit,10*unit,1*unit);
+  ctx.fillStyle = "rgb(255,255,255)"
+  ctx.fillRect(7*unit,40*unit,2*unit,1*unit);
+  ctx.fillRect(6*unit,38*unit,1*unit,1*unit);
+  ctx.fillRect(4*unit,39*unit,1*unit,1*unit);
+  ctx.fillRect(8*unit,35*unit,4*unit,1*unit);
+  ctx.fillStyle = "rgb(252,224,203)"
+  ctx.fillRect(14*unit,31*unit,1*unit,1*unit);
+  ctx.fillRect(14*unit,32*unit,1*unit,1*unit);
+  ctx.fillRect(12*unit,32*unit,1*unit,1*unit);
+  ctx.fillRect(10*unit,32*unit,1*unit,2*unit);
+  ctx.fillRect(12*unit,33*unit,3*unit,1*unit);
+  ctx.fillRect(11*unit,34*unit,3*unit,1*unit);
+  ctx.fillRect(6*unit,41*unit,3*unit,1*unit);
+  ctx.fillStyle = "rgb(52,216,219)"
+  ctx.fillRect(13*unit,31*unit,1*unit,2*unit);
+
 }
