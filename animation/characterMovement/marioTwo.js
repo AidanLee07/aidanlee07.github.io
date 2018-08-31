@@ -84,9 +84,13 @@ function secondMario(){
     ctx.fillRect(7*unit,18*unit,unit,unit);
     ctx.fillRect(9*unit,18*unit,unit,unit);
     ctx.fillStyle = "rgb(255,255,255)"; //white
-    ctx.fillRect(10*unit,2*unit,unit,unit);
-    ctx.fillRect(10*unit,13*unit,unit,unit);
-    ctx.fillRect(7*unit,13*unit,2*unit,unit);
+    ctx.fillRect(3*unit,14*unit,3*unit,unit);
+    ctx.fillRect(3*unit,15*unit,2*unit,unit);
+    ctx.fillRect(3*unit,16*unit,2*unit,unit);
+    ctx.fillRect(7*unit,14*unit,2*unit,unit);
+    ctx.fillRect(7*unit,15*unit,2*unit,unit);
+    ctx.fillRect(10*unit,13*unit,1*unit,2*unit);
+    ctx.fillRect(10*unit,2*unit,1*unit,unit);
     ctx.fillStyle = "rgb(89,0,255)"; //blue
     ctx.fillRect(9*unit,11*unit,unit,unit);
     ctx.fillRect(10*unit,12*unit,unit,unit);
