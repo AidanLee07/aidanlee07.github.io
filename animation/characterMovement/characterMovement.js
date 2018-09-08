@@ -30,17 +30,17 @@ function animationLoop(timestamp) {
     // 7. Clears everthing in canvas
  ctx.clearRect(0, 0, canvas.width,canvas.height)
  
- // 8.Draw image in canvas
- //ctx.fillRect(positionX,  0, 50, 50)
- wall();
-//  if (isFacingRight == true){
-//  secondMario;
-//  }else if (isFacingRight == false){
-//      ctx.save();
-//      ctx.scale(-1,1)
-//      secondMario();
-//      ctx.restore();
-//  }
+ //8.Draw image in canvas
+    ctx.fillRect(positionX,  0, 50, 50)
+    wall();
+    if (isFacingRight == true){
+    secondMario;
+    }else if (isFacingRight == false){
+    ctx.save();
+    ctx.scale(-1,1)
+    secondMario();
+    ctx.restore();
+    }
     ctx.save();
     ctx.translate(positionX,600+positionY); 
     secondMario();
@@ -77,7 +77,7 @@ function animationLoop(timestamp) {
   if (positionX == canvas.width){
       positionX = 0;
   } else{
-      positionX += 5
+      positionX += 5;
   }
   if (isFacingRight == true){
      positionX += 1;
