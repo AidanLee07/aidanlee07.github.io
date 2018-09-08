@@ -39,8 +39,8 @@ function drawCharacter() {
         drawMario();
     } else if (isFacingRight == false) {
         ctx.save();
-        ctx.translate(mariowidth, 1*unit);
-        ctx.translate(positionX , canvas.height)
+        ctx.translate(mariowidth,1*unit);
+        ctx.translate(positionX,canvas.height)
         ctx.scale(-1,1);
     }
     drawMario();
