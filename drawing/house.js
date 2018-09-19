@@ -2,11 +2,16 @@ var canvas;
 var ctx;
 window.onload = init; // When the window loads, run the init function
 function wall(){
-    ctx.fillStyle = 'grey'; // Setting the colour of filling
+    ctx.fillStyle = 'red';
+    ctx.fillRect(0,0,1500,700);
+    ctx.fillStyle = 'green'; // Setting the colour of filling
+    ctx.fillRect(0,700,1500,200);   
+    ctx.fillStyle = "brown"
     ctx.fillRect(80,524,1253,286); // Drawing a rectangle
     ctx.fillRect(708,324,625,204);
+    ctx.fillRect(100,50,200,200);
     ctx.beginPath 
-    ctx.fillStyle = "grey"
+    ctx.fillStyle = "brown"
     ctx.moveTo(1325,250); 
     ctx.lineTo(1325,89); 
     ctx.lineTo(1246,89);
@@ -36,10 +41,10 @@ function wall(){
     ctx.fillRect(393,605,69,51);
     ctx.fillRect(465,605,69,51);
     ctx.fillRect(537,605,69,51);
-    ctx.fillStyle = 'blue';
+    ctx.fillStyle = 'red';
     ctx.fillRect(750,576,143,273);
     ctx.beginPath(); // Code that comes before drawing a line
-    ctx.fillStyle = "blue"
+    ctx.fillStyle = "black"
     ctx.moveTo(703,343); 
     ctx.lineTo(703,517); 
     ctx.lineTo(50,517);
@@ -47,7 +52,7 @@ function wall(){
     ctx.moveTo(683,343);
     ctx.fill();
     ctx.beginPath 
-    ctx.fillStyle = "blue"
+    ctx.fillStyle = "black"
     ctx.moveTo(675,314); 
     ctx.lineTo(1370,314); 
     ctx.lineTo(1219,133);
