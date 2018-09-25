@@ -18,4 +18,8 @@ function init() {
     ctx.translate(30 * unit, 0 * unit);
     drawMario3();
     ctx.restore();
+    ctx.save();
+    ctx.translate(0 * unit, 16 * unit);
+    drawGroundBlocks(10,1);
+    ctx.restore();
 }

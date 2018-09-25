@@ -1,6 +1,6 @@
 var canvas;
 var ctx;
-var unit = 40;
+var unit = 20;
 window.onload = init; // When the window loads, run the init function
 function secondMario() {
     ctx.fillStyle = "rgb(144,0,0)"; //dark red
@@ -120,9 +120,5 @@ function secondMario() {
 function init() {
     canvas = document.getElementById("myCanvas");
     ctx = canvas.getContext("2d");
-    ctx.save();
     secondMario();
-    ctx.scale(2, 2);
-    ctx.translate()
-    ctx.restore();
 }
