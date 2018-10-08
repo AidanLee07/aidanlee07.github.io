@@ -7,8 +7,6 @@ function init(){
     ctx = canvas.getContext("2d");
     //drawGroundBlocks(10,10);
     //drawGroundBlock
-    ctx.save();
-    ctx.translate(0,440);
-    drawIceBlocks(300,300);
-    ctx.restore();
+    drawBrickBlocks(8,8);
+    drawBrickBlock();
 }

@@ -7,8 +7,8 @@ var time = 0;
 var positionX = 0;
 var unit = 25;
 
-const timeLoop = 8;
-const speed = 10;
+const timeLoop = 12;
+const speed = 5;
 
 window.onload = init;
 
@@ -24,6 +24,7 @@ function startAnimation() {
 
 function animationLoop(timestamp) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBackground();
     walkingAnimation();
     changePositionX();
     changeTime();
@@ -34,10 +35,10 @@ function walkingAnimation() {
     ctx.save();
     ctx.translate(positionX, 12 * unit);
     ctx.scale(0.3, 0.3);
-    if ((0 <= time) && (time <= 4)){
+    if ((0 <= time) && (time < timeLoop/2)){
      drawMario2();
-    } else if ((4<= time)&&(time<=8)){
-       drawMario3(); 
+    } else if ((timeLoop/2 <= time)&&(time<=timeLoop)){
+       drawMario3();
     }
     ctx.restore();
 }
@@ -55,3 +56,13 @@ function changeTime() {
         time += 1;
     }
 } 
+
+function drawBackground(){
+    ctx.fillStyle = "rgb(0,255,255)";
+    ctx.fillRect(0,0,1600,600);
+    ctx.save();
+    ctx.scale(0.3,0.3);
+    ctx.translate(0,1400);
+    drawGroundBlocks(20,4);
+    ctx.restore();
+}
