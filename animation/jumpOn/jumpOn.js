@@ -4,13 +4,17 @@ var requestId;
 
 var time = 0;
 var positionX = 0;
-var unit = 25;              
+var unit = 25;
 var positionY = 25 * unit;
-var isJumping = true;
+var isJumping = false;
 
 const timeLoop = 10;
 const speed = 10;
-const jumpspeed = 3;
+const jumpspeed = 12;
+const upPosition = 1 * unit;
+const brickPosition = 9 * unit;
+const fallPosition = 32 * unit;
+const downPosition = 40 * unit;
 window.onload = init;
 
 function init() {
@@ -29,10 +33,10 @@ function animationLoop(timestamp) {
     walkingAnimation();
     changePositionX();
     changePositionY();
+    drawRuler(10);
     changeTime();
     changeJump();
-    drawRuler(10);
-
+    drawRuler(1);
     requestId = requestAnimationFrame(animationLoop);
 }
 function walkingAnimation() {
@@ -50,47 +54,55 @@ function walkingAnimation() {
     }
     ctx.restore();
 }
-    function changePositionX() {
-        if (positionX < canvas.width) {
-            positionX += speed;
-        } else {
-            positionX = -10 * unit;
-        }
+function changePositionX() {
+    if (positionX < canvas.width) {
+        positionX += speed;
+    } else {
+        positionX = -10 * unit;
     }
-    function changeTime() {
-        if (time == timeLoop) {
-            time = 0;
-        } else {
-            time += 1;
-        }
+}
+function changeTime() {
+    if (time == timeLoop) {
+        time = 0;
+    } else {
+        time += 1;
+    }
+}
+
+function drawBackground() {
+    ctx.fillStyle = "rgb(0,255,255)";
+    ctx.fillRect(0, 0, 1600, 800);
+    ctx.save();
+    ctx.scale(0.3, 0.3);
+    ctx.translate(0, 2500);
+    drawGroundBlocks(20, 4);
+    ctx.restore();
+    ctx.save();
+    ctx.scale(0.3, 0.3);
+    ctx.translate(30*unit,1650);
+    drawBrickBlocks(5,1);
+    ctx.restore();
+    
+
+}
+function changePositionY() {
+    if ((upPosition <= positionX) && (positionX < brickPosition)) {
+        positionY -= jumpspeed;
+    } else if ((fallPosition < positionX) && (positionX <= downPosition)) {
+        positionY += jumpspeed;
     }
 
-    function drawBackground() {
-        ctx.fillStyle = "rgb(0,255,255)";
-        ctx.fillRect(0, 0, 1600, 800);
-        ctx.save();
-        ctx.scale(0.3, 0.3);
-        ctx.translate(0, 2500);
-        drawGroundBlocks(20, 4);
-        ctx.restore();
+
+}
+
+function changeJump() {
+    if (( upPosition <= positionX) && (positionX <= brickPosition)) {
+        isJumping = true;
+    } else if ((fallPosition <= positionX) && (positionX<= downPosition)){
+        isJumping = true;
+    }else{
+        isJumping = false;
     }
-    function changePositionY() {
-        const jumpPosition = canvas.width / 4;
-        const peakPosition = canvas.width / 2;
-        const landPosition = canvas.width * 3 / 4;
-        if ((jumpPosition <= positionX) && (positionX < peakPosition)) {
-            positionY -= jumpspeed;
-        } else if ((peakPosition < positionX) && (positionX <= landPosition)) {
-            positionY += jumpspeed;
-        }
+}
 
 
-    }
-
-    function changeJump() {
-        if ((canvas.width/3 <= positionX) && (positionX <= 2*canvas.width/3)) {
-            isJumping = true;
-        } else {
-            isJumping = false;
-        }
-    }
