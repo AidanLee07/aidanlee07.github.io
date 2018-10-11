@@ -36,7 +36,7 @@ function animationLoop(timestamp) {
     drawRuler(10);
     changeTime();
     changeJump();
-    drawRuler(1);
+    //drawRuler(1);
     requestId = requestAnimationFrame(animationLoop);
 }
 function walkingAnimation() {
