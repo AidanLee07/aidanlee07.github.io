@@ -33,7 +33,6 @@ function animationLoop(timestamp) {
     walkingAnimation();
     changePositionX();
     changePositionY();
-    drawRuler(10);
     changeTime();
     changeJump();
     //drawRuler(1);
