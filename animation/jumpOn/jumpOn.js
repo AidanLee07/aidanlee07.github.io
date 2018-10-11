@@ -4,7 +4,7 @@ var requestId;
 
 var time = 0;
 var positionX = 0;
-var unit = 25;
+var unit = 25;              
 var positionY = 25 * unit;
 var isJumping = true;
 
@@ -31,7 +31,7 @@ function animationLoop(timestamp) {
     changePositionY();
     changeTime();
     changeJump();
-
+    drawRuler(10);
 
     requestId = requestAnimationFrame(animationLoop);
 }
