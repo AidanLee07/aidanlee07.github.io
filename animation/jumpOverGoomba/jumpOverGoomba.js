@@ -32,8 +32,10 @@ function animationLoop(timeStamp) {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	// 8. Draw image in canvas
-	ctx.fillRect(positionX, 0, 50, 50);
-
+    ctx.fillRect(positionX, 0, 50, 50);
+    drawGoomba3(0,0);
+    drawMario3(20,20);
+    drawRuler(10);
 	// 9. Move image
 	positionX += 10;
 
