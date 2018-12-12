@@ -1,0 +1,29 @@
+nav{
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-end;
+}
+
+.item{
+   width: 70px;
+   border-style: solid; 
+}
+
+body{
+   background-image: url("slide4.jpg");
+   background-repeat: no-repeat;
+}
+
+section{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-evenly;
+   margin-top: 900px
+}
+ .picture{
+   width: 500px;
+   height: 250px;
+
+ }
