@@ -1,3 +1,6 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
+
 header{
     font-size: 30px;
     text-align: center;
@@ -16,7 +19,6 @@ nav{
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     margin-top: 20px;
-    margin-bottom: 50px;
 }
 
 a:link,
@@ -29,13 +31,8 @@ a:hover{
     color: #5085A5;
 }
 
-section{
-    text-align: center;
-}
-
-hr{
-    width: 300px;
-    background-color: #F7F9FB;
-    height: 2px;
-
-}
+/* #687864 goldish
+#31708E dark blue
+#5085A5 blue 
+#8FC1E3light blue
+#F7F9FB whitish */

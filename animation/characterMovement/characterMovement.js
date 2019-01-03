@@ -31,7 +31,7 @@ function animationLoop(timestamp) {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
     //8.Draw image in canvas
-    ctx.fillRect(positionX, 0, 50, 50)
+    // ctx.fillRect(positionX, 0, 50, 50)
     wall();
     if (isFacingRight == true) {
         secondMario;
