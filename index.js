@@ -1,0 +1,12 @@
+var canvas;
+var ctx;
+var unit = 20;
+window.onload = init; // When the window loads, run the init function
+function init() {
+    canvas = document.getElementById("myCanvas");
+    ctx = canvas.getContext("2d");
+    drawLlama();
+   
+
+                    
+}

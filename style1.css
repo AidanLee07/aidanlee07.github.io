@@ -31,8 +31,10 @@ a:hover{
     color: #5085A5;
 }
 
-/* #687864 goldish
-#31708E dark blue
-#5085A5 blue 
-#8FC1E3light blue
-#F7F9FB whitish */
+canvas{
+    border-style: solid;
+}
+section{
+    text-align: center;
+    margin-top: 20px;
+}
