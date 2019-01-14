@@ -1,6 +1,6 @@
 var canvas;
 var ctx;
-var unit = 20;
+var unit = 10;
 window.onload = init; // When the window loads, run the init function
 function init() {
     canvas = document.getElementById("myCanvas");

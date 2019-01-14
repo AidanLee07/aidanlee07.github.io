@@ -38,6 +38,30 @@ function drawHead() {
     ctx.fillRect(12 * unit, 19 * unit, 5 * unit, 1 * unit);
     ctx.fillRect(12 * unit, 20 * unit, 5 * unit, 1 * unit);
     ctx.fillRect(12 * unit, 21 * unit, 5 * unit, 1 * unit);
+    ctx.fillRect(6 * unit, 16 * unit, 2 * unit, 1 * unit);
+    ctx.fillRect(7 * unit, 17 * unit, 2 * unit, 5 * unit);
+    ctx.fillRect(6 * unit, 20 * unit, 1 * unit, 3 * unit);
+    ctx.fillRect(5 * unit, 21 * unit, 1 * unit, 2 * unit);
+    ctx.fillRect(22 * unit, 16 * unit, 2 * unit, 1 * unit);
+    ctx.fillRect(21 * unit, 17 * unit, 4 * unit, 1 * unit);
+    ctx.fillRect(20 * unit, 18 * unit, 5 * unit, 1 * unit);
+    ctx.fillRect(19 * unit, 19 * unit, 6 * unit, 1 * unit);
+    ctx.fillRect(18 * unit, 20 * unit, 7 * unit, 1 * unit);
+    ctx.fillRect(17 * unit, 21 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 22 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 23 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 24 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 25 * unit, 7 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 26 * unit, 7 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 27 * unit, 7 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 28 * unit, 7 * unit, 1 * unit);
+    ctx.fillRect(15 * unit, 29 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(15 * unit, 30 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(15 * unit, 31 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(13 * unit, 32 * unit, 10 * unit, 1 * unit);
+    ctx.fillRect(13 * unit, 33 * unit, 10 * unit, 1 * unit);
+    ctx.fillRect(13 * unit, 34 * unit, 10 * unit, 1 * unit);
+    ctx.fillRect(13 * unit, 35 * unit, 9 * unit, 1 * unit);
     ctx.fillStyle = "rgb(112,76,102)";//brown
     ctx.fillRect(6 * unit, 13 * unit, 2 * unit, 1 * unit);
     ctx.fillRect(5 * unit, 14 * unit, 4 * unit, 1 * unit);
@@ -55,6 +79,7 @@ function drawHead() {
     ctx.fillRect(10 * unit, 18 * unit, 1 * unit, 2 * unit);
     ctx.fillRect(11 * unit, 19 * unit, 1 * unit, 3 * unit);
     ctx.fillRect(10 * unit, 22 * unit, 6 * unit, 1 * unit);
+    ctx.fillRect(10 * unit, 22 * unit, 6 * unit, 1 * unit);
     ctx.fillStyle = "rgb(214,214,214)";//white
     ctx.fillRect(14 * unit, 11 * unit, 2 * unit, 1 * unit);
     ctx.fillRect(13 * unit, 12 * unit, 4 * unit, 1 * unit);
@@ -63,12 +88,85 @@ function drawHead() {
     ctx.fillRect(16 * unit, 14 * unit, 1 * unit, 1 * unit);
     ctx.fillRect(13 * unit, 15 * unit, 4 * unit, 1 * unit);
     ctx.fillRect(14 * unit, 16 * unit, 3 * unit, 1 * unit);
-    ctx.fillStyle = "rgb(0,0,0)";//black
+    ctx.fillRect(1 * unit, 20 * unit, 5 * unit, 1 * unit);
+    ctx.fillStyle = "rgb(96,61,142)";//dark purple
+    ctx.fillRect(14 * unit, 0 * unit, 2 * unit, 2 * unit);
+    ctx.fillRect(15 * unit, 2 * unit, 2 * unit, 2 * unit);
+    ctx.fillRect(16 * unit, 3 * unit, 2 * unit, 3 * unit);
+    ctx.fillRect(17 * unit, 4 * unit, 2 * unit, 5 * unit);
+    ctx.fillRect(18 * unit, 9 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(10 * unit, 2 * unit, 2 * unit, 1 * unit);
+    ctx.fillRect(11 * unit, 3 * unit, 2 * unit, 1 * unit);
+    ctx.fillRect(12 * unit, 3 * unit, 1 * unit, 3 * unit);
+    ctx.fillRect(13 * unit, 5 * unit, 1 * unit, 3 * unit);
+    ctx.fillRect(14 * unit, 6 * unit, 1 * unit, 2 * unit);
+    ctx.fillRect(14 * unit, 7 * unit, 2 * unit, 3 * unit);
+    ctx.fillRect(3 * unit, 16 * unit, 3 * unit, 1 * unit);
+    ctx.fillRect(2 * unit, 17 * unit, 5 * unit, 1 * unit);
+    ctx.fillRect(2 * unit, 18 * unit, 5 * unit, 1 * unit);
+    ctx.fillRect(6 * unit, 19 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(1 * unit, 21 * unit, 4 * unit, 1 * unit);
+    ctx.fillRect(3 * unit, 22 * unit, 2 * unit, 1 * unit);
+    ctx.fillRect(10 * unit, 23 * unit, 6 * unit, 1 * unit);
+    ctx.fillRect(10 * unit, 24 * unit, 6 * unit, 1 * unit);
+    ctx.fillRect(9 * unit, 25 * unit, 7 * unit, 1 * unit);
+    ctx.fillRect(9 * unit, 26 * unit, 7 * unit, 1 * unit);
+    ctx.fillRect(8 * unit, 27 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(7 * unit, 28 * unit, 9 * unit, 1 * unit);
+    ctx.fillRect(7 * unit, 29 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(7 * unit, 30 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(7 * unit, 31 * unit, 8 * unit, 1 * unit);
+    ctx.fillRect(5 * unit, 32 * unit, 9 * unit, 1 * unit);
+    ctx.fillRect(5 * unit, 33 * unit, 9 * unit, 1 * unit);
+    ctx.fillRect(5 * unit, 34 * unit, 10 * unit, 1 * unit);
+    ctx.fillRect(5 * unit, 35 * unit, 10 * unit, 1 * unit);
+    ctx.fillStyle = "rgb(0,0,0)";//black change this black
     ctx.fillRect(15 * unit, 14 * unit, 1 * unit, 1 * unit);
+    ctx.fillStyle = "rgb(51,51,51)";//black for others
+    ctx.fillRect(2 * unit, 18 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(3 * unit, 17 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(4 * unit, 18 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(5 * unit, 17 * unit, 1 * unit, 1 * unit);
+    ctx.fillStyle = "rgb(141,141,141)";//grey
+    ctx.fillRect(9 * unit, 20 * unit, 2 * unit, 2 * unit);
+
+
 }
 
 
 function drawBody() {
+    ctx.fillStyle = "rgb(156,108,219)";//light purple
+    ctx.fillRect(13 * unit, 36 * unit, 9 * unit, 1 * unit);
+    ctx.fillRect(16 * unit, 37 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(18 * unit, 37 * unit, 1 * unit, 1 * unit);
+    ctx.fillStyle = "rgb(96,61,142)";//dark purple
+    ctx.fillRect(5 * unit, 36 * unit, 10 * unit, 1 * unit);
+    ctx.fillRect(5 * unit, 37 * unit, 10 * unit, 1 * unit);
+    ctx.fillStyle = "rgb(44,119,165)";// dark sky blue
+    ctx.fillRect(4 * unit, 35 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(6 * unit, 35 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(4 * unit, 36 * unit, 3 * unit, 1 * unit);
+    ctx.fillRect(9 * unit, 36 * unit, 1 * unit, 4 * unit);
+    ctx.fillRect(12 * unit, 36 * unit, 1 * unit, 4 * unit);
+    ctx.fillRect(4 * unit, 37 * unit, 5 * unit, 1 * unit);
+    ctx.fillRect(3 * unit, 38 * unit, 12 * unit, 1 * unit);
+    ctx.fillRect(3 * unit, 39 * unit, 12 * unit, 1 * unit);
+    ctx.fillRect(5 * unit, 40 * unit, 2 * unit, 1 * unit);
+    ctx.fillRect(8 * unit, 40 * unit, 2 * unit, 1 * unit);
+    ctx.fillRect(11 * unit, 40 * unit, 4 * unit, 1 * unit);
+    ctx.fillRect(6 * unit, 41 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(9 * unit, 41 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(11 * unit, 41 * unit, 1 * unit, 1 * unit);
+    ctx.fillRect(13 * unit, 41 * unit, 1 * unit, 1 * unit);
+    ctx.fillStyle = "rgb(51,136,165)";// light sky blue
+    ctx.fillRect(15 * unit, 36 * unit, 1 * unit, 4 * unit);
+    ctx.fillRect(16 * unit, 38 * unit, 1 * unit, 2 * unit);
+    ctx.fillRect(17 * unit, 36 * unit, 1 * unit, 6 * unit);
+    ctx.fillRect(18 * unit, 38 * unit, 1 * unit, 3 * unit);
+    ctx.fillRect(19 * unit, 36 * unit, 1 * unit, 4 * unit);
+    ctx.fillRect(20 * unit, 37 * unit, 1 * unit, 5 * unit);
+    ctx.fillRect(21 * unit, 37 * unit, 1 * unit, 4 * unit);
+    ctx.fillRect(22 * unit, 39 * unit, 1 * unit, 1 * unit);
 
 }
 
