@@ -3,7 +3,7 @@ function drawLlama(x, y, isBlinking) {
     ctx.save();
     ctx.translate(x * unit, y * unit);
     drawHead();
-    drawEye();
+    drawEye(isBlinking);
     drawBody();
     drawLeg();
     ctx.restore();
@@ -123,22 +123,36 @@ function drawHead() {
     ctx.fillRect(5 * unit, 17 * unit, 1 * unit, 1 * unit);
     ctx.fillStyle = "rgb(141,141,141)";//grey
     ctx.fillRect(9 * unit, 20 * unit, 2 * unit, 2 * unit);
+    ctx.fillStyle = "rgb(214,214,214)";//white
+    ctx.fillRect(1 * unit, 20 * unit, 5 * unit, 1 * unit);
 
 
 }
 
-function drawEye(){
-    ctx.fillStyle = "rgb(214,214,214)";//white
-    ctx.fillRect(14 * unit, 11 * unit, 2 * unit, 1 * unit);
-    ctx.fillRect(13 * unit, 12 * unit, 4 * unit, 1 * unit);
-    ctx.fillRect(13 * unit, 13 * unit, 4 * unit, 1 * unit);
-    ctx.fillRect(13 * unit, 14 * unit, 2 * unit, 1 * unit);
-    ctx.fillRect(16 * unit, 14 * unit, 1 * unit, 1 * unit);
-    ctx.fillRect(13 * unit, 15 * unit, 4 * unit, 1 * unit);
-    ctx.fillRect(14 * unit, 16 * unit, 3 * unit, 1 * unit);
-    ctx.fillRect(1 * unit, 20 * unit, 5 * unit, 1 * unit);
-    ctx.fillStyle = "rgb(0,0,0)";//black change this black
-    ctx.fillRect(15 * unit, 14 * unit, 1 * unit, 1 * unit);
+function drawEye(isBlinking){
+    if (isBlinking == false) {
+        ctx.fillStyle = "rgb(214,214,214)";//white
+        ctx.fillRect(14 * unit, 11 * unit, 2 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 12 * unit, 4 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 13 * unit, 4 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 14 * unit, 2 * unit, 1 * unit);
+        ctx.fillRect(16 * unit, 14 * unit, 1 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 15 * unit, 4 * unit, 1 * unit);
+        ctx.fillRect(14 * unit, 16 * unit, 3 * unit, 1 * unit);
+        ctx.fillStyle = "rgb(0,0,0)";//black change this black
+        ctx.fillRect(15 * unit, 14 * unit, 1 * unit, 1 * unit);
+    } else if (isBlinking == true) {
+        ctx.fillStyle = "rgb(156,108,219)";//light purple
+        ctx.fillRect(14 * unit, 11 * unit, 2 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 12 * unit, 4 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 13 * unit, 4 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 14 * unit, 2 * unit, 1 * unit);
+        ctx.fillRect(16 * unit, 14 * unit, 1 * unit, 1 * unit);
+        ctx.fillRect(13 * unit, 15 * unit, 4 * unit, 1 * unit);
+        ctx.fillRect(14 * unit, 16 * unit, 3 * unit, 1 * unit);
+        ctx.fillStyle = "rgb(0,0,0)";//black change this black
+        ctx.fillRect(13 * unit, 14 * unit, 4 * unit, 1 * unit);
+    }
 }
 
 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        var gamePiece;
+        var wall1;
+        var wall2;
+        var wall3;
+        var wall4;
+        var wall5;
+        var wall6;
+        var ctx;
+        var unit = 5;
+        function startGame() {
+            gameArea.start();
+            ctx = gameArea.context;
+            gamePiece = new mario(0, 0);
+            wall1 = new wall(300, 50, 10, 30, "black");
+            wall2 = new wall(40, 30, 10 , 100 , "black");
+            wall3 = new wall(70, 0, 10 , 500 , "black");
+            wall4 = new wall(100, 30, 10 , 50 , "black");
+            wall5 = new wall(130, 0, 10 , 500 , "black");
+            wall6 = new wall(160, 30, 10 , 50, "black");
+        }
+
+        var gameArea = {
+            canvas: document.createElement("canvas"),
+            start: function () {
+                this.canvas.width = 1500;
+                this.canvas.height = 700;
+                this.context = this.canvas.getContext("2d");
+                document.body.insertBefore(this.canvas, document.body.childNodes[4]);
+                this.interval = setInterval(updateGameArea, 20);
+                window.addEventListener('keydown', function (e) {
+                    gameArea.keys = (gameArea.keys || []);
+                    gameArea.keys[e.keyCode] = (e.type == "keydown");
+                })
+                window.addEventListener('keyup', function (e) {
+                    gameArea.keys[e.keyCode] = (e.type == "keydown");
+                })
+            },
+            clear: function () {
+                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            },
+            stop: function () {
+                clearInterval(this.interval);
+            }
+        }
+
+        function mario(x, y) {
+            this.gameArea = gameArea;
+            this.x = x;
+            this.y = y;
+            this.width = 12;
+            this.height = 16;
+            this.update = function () {
+                drawMario1(this.x, this.y);
+
+            }
+
+            this.newPos = function () {
+                this.x += this.speedX;
+                this.y += this.speedY;
+            }
+
+            this.crashWith = function (otherobj) {
+                var myLeft = this.x;
+                var myright = this.x + this.width;
+                var myTop = this.y;
+                var myBottom = this.y + this.height;
+                var otherRight = otherobj.x + otherobj.width;
+                var otherTop = otherobj.y;
+                var otherBottom = otherobj.y + otherobj.height;
+                var otherleft = otherobj.x;
+                var crash = true;
+                if ((myright < otherleft) || (myBottom < otherTop) || (myTop > otherBottom) || (myLeft > otherRight)) {
+                    crash = false;
+                }
+                return crash;
+            }
+        }
+        function wall(x, y, width, height, color) {
+            this.width = width;
+            this.height = height;
+
+            this.x = x
+            this.y = y
+            this.update = function () {
+                ctx.fillStyle = color
+                ctx.fillRect(this.x*unit, this.y*unit, this.width*unit, this.height*unit);
+            }
+        }
+
+        function updateGameArea() {
+            if (gamePiece.crashWith(wall1)) {
+                gameArea.stop();
+            } else {
+                gameArea.clear();
+                drawBackground();
+                wall1.x -= 2
+                wall1.update();
+                wall2.update();
+                wall3.update();
+                wall4.update();
+                wall5.update();
+                wall6.update();
+                gamePiece.speedX = 0;
+                gamePiece.speedY = 0;
+                if (gameArea.keys && gameArea.keys[37]) {
+                    gamePiece.speedX = -1;
+                }
+                if (gameArea.keys && gameArea.keys[38]) {
+                    gamePiece.speedY = -1;
+                }
+                if (gameArea.keys && gameArea.keys[39]) {
+                    gamePiece.speedX = 1;
+                }
+                if (gameArea.keys && gameArea.keys[40]) {
+                    gamePiece.speedY = +1;
+                }
+                gamePiece.newPos();
+                gamePiece.update();
+            }
+        }
+        
+
+            function drawBackground() {
+                ctx.fillStyle = "blue"
+                ctx.fillRect(0, 0, gameArea.canvas.width, gameArea.canvas.height);
+            }
+
+    </script>
+</head>
+
+<body onload="startGame()">
+    <header>
+        <h1>Games</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Homepage</a>
+    </nav>
+    <section>
+    </section>
+    <footer>
+        <p>&copy; 2019</p>
+    </footer>
+    <script src="../drawing/allMario.js"></script>
+</body>
+
+</html>

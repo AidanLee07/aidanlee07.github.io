@@ -38,3 +38,27 @@ section{
     text-align: center;
     margin-top: 20px;
 }
+
+.notesContainer{
+    
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-style: solid;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+p{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h1{
+    font-size: 2em;
+}
